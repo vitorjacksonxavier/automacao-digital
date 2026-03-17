@@ -132,21 +132,6 @@ Caixas: 1
 
 ---
 
-## 🧠 Observações
-- ID deve ser único  
-- Aceita vírgula ou ponto  
-- Correção de cor é aproximada  
 
----
 
-## 🚀 Melhorias futuras
-- Persistência (JSON/DB)  
-- Edição de peças  
-- Exportação de relatórios  
-- Testes automatizados  
-- Interface gráfica  
-
----
-
-## 📜 Licença
-Definir conforme necessidade  
+ 
