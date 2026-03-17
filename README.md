@@ -20,55 +20,211 @@ Como Executar
 Via GitHub (Repositório Oficial):
 git clone https://github.com/vitorjacksonxavier/automacao-digital.git
 cd automacao-digital
-python gestao_pecas.py
+python automacao-digital
 
-VS Code (Recomendado):
-1. Abra pasta no VS Code
-2. Terminal (Ctrl + `)
-3. python gestao_pecas.py
 
 Exemplos de Entradas e Saídas
 -----------------------------
-Teste 1: Peça VÁLIDA
+==================================================
+🟦 GESTÃO DE PEÇAS - AUTOMACÃO INDUSTRIAL
+1. Cadastrar nova peça
+2. Listar peças aprovadas/reprovadas
+3. Remover peça cadastrada
+4. Listar caixas fechadas
+5. Gerar relatório final
+0. Sair
+==================================================
+Escolha: 1
+
 === CADASTRAR NOVA PEÇA ===
-ID: P001 
-Peso: 100
-Cor: azull    <- Corrigido para "azul"
-Comprimento: 15
+Informe o ID da peça: 1
+Informe o peso da peça (em g): 100
+Informe a cor da peça: azull
+Informe o comprimento da peça (em cm): 15
 
-CONFIRMAÇÃO:
-ID: p001
+==================================================
+CONFIRMAÇÃO DOS DADOS DA PEÇA
+==================================================
+Id: 1
 Peso: 100,0g
-Cor: azul ✓
-Status: Aprovada ✓
+Cor: azul
+Comprimento: 15,0cm
+Status: Aprovada
+==================================================
+Confirma o cadastro? (s/n): s
+✅ Peça cadastrada com sucesso!
 
-Teste 2: Peça REPROVADA (Peso baixo)
-ID: P002
-Peso: 80       <- Fora do padrão
-Cor: Verde
-Comprimento: 12
+==================================================
+🟦 GESTÃO DE PEÇAS - AUTOMACÃO INDUSTRIAL
+1. Cadastrar nova peça
+2. Listar peças aprovadas/reprovadas
+3. Remover peça cadastrada
+4. Listar caixas fechadas
+5. Gerar relatório final
+0. Sair
+==================================================
+Escolha: 1
 
-CONFIRMAÇÃO:
+=== CADASTRAR NOVA PEÇA ===
+Informe o ID da peça: 2
+Informe o peso da peça (em g): 80 
+Informe a cor da peça: laranja
+Informe o comprimento da peça (em cm): 21
+
+==================================================
+CONFIRMAÇÃO DOS DADOS DA PEÇA
+==================================================
+Id: 2
+Peso: 80,0g
+Cor: laranja
+Comprimento: 21,0cm
 Status: Reprovada
-Motivos: peso fora do padrão (95g a 105g)
+==================================================
+Confirma o cadastro? (s/n): s
+✅ Peça cadastrada com sucesso!
 
-Teste 3: Relatório Completo
+==================================================
+🟦 GESTÃO DE PEÇAS - AUTOMACÃO INDUSTRIAL
+1. Cadastrar nova peça
+2. Listar peças aprovadas/reprovadas
+3. Remover peça cadastrada
+4. Listar caixas fechadas
+5. Gerar relatório final
+0. Sair
+==================================================
+Escolha: 2
+
+=== LISTAR PEÇAS APROVADAS/REPROVADAS ===
+
+--- PEÇAS APROVADAS ---
+ID: 1 | Peso: 100.0g | Cor: azul | Comprimento: 15.0cm
+
+--- PEÇAS REPROVADAS ---
+ID: 2 | Peso: 80.0g | Cor: laranja | Comprimento: 21.0cm | Motivos: peso fora do padrão (95g a 105g); cor fora do padrão (apenas azul ou verde); comprimento fora do padrão (10cm a 20cm)
+
+==================================================
+🟦 GESTÃO DE PEÇAS - AUTOMACÃO INDUSTRIAL
+1. Cadastrar nova peça
+2. Listar peças aprovadas/reprovadas
+3. Remover peça cadastrada
+4. Listar caixas fechadas
+5. Gerar relatório final
+0. Sair
+==================================================
+Escolha: 3
+
+=== REMOVER PEÇA CADASTRADA ===
+Informe o ID da peça: 1
+✅ Peça 1 removida com sucesso.
+
+AGORA SUPONHA A INSERÇÃO DE 11 PEÇAS, SENDO QUE SOMENTE ALGUMAS FORAM APROVADAS
+
+==================================================
+🟦 GESTÃO DE PEÇAS - AUTOMACÃO INDUSTRIAL
+1. Cadastrar nova peça
+2. Listar peças aprovadas/reprovadas
+3. Remover peça cadastrada
+4. Listar caixas fechadas
+5. Gerar relatório final
+0. Sair
+==================================================
+Escolha: 1
+
+=== CADASTRAR NOVA PEÇA ===
+Informe o ID da peça: 11
+Informe o peso da peça (em g): 13
+Informe a cor da peça: ciano
+Informe o comprimento da peça (em cm): 200
+
+==================================================
+CONFIRMAÇÃO DOS DADOS DA PEÇA
+==================================================
+Id: 11
+Peso: 13,0g
+Cor: ciano
+Comprimento: 200,0cm
+Status: Reprovada
+==================================================
+Confirma o cadastro? (s/n): s
+✅ Peça cadastrada com sucesso!
+
+==================================================
+🟦 GESTÃO DE PEÇAS - AUTOMACÃO INDUSTRIAL
+1. Cadastrar nova peça
+2. Listar peças aprovadas/reprovadas
+3. Remover peça cadastrada
+4. Listar caixas fechadas
+5. Gerar relatório final
+0. Sair
+==================================================
+Escolha: 2
+
+=== LISTAR PEÇAS APROVADAS/REPROVADAS ===
+
+--- PEÇAS APROVADAS ---
+ID: 1 | Peso: 95.0g | Cor: azul | Comprimento: 10.0cm
+ID: 2 | Peso: 95.0g | Cor: azul | Comprimento: 10.0cm
+ID: 3 | Peso: 95.0g | Cor: verde | Comprimento: 11.0cm
+ID: 4 | Peso: 95.0g | Cor: azul | Comprimento: 11.0cm
+ID: 5 | Peso: 96.0g | Cor: azul | Comprimento: 11.0cm
+
+--- PEÇAS REPROVADAS ---
+ID: 6 | Peso: 1.0g | Cor: azul | Comprimento: 7.0cm | Motivos: peso fora do padrão (95g a 105g); comprimento fora do padrão (10cm a 20cm)
+ID: 7 | Peso: 14.0g | Cor: verde | Comprimento: 14.0cm | Motivos: peso fora do padrão (95g a 105g)
+ID: 8 | Peso: 1.0g | Cor: azul | Comprimento: 200.0cm | Motivos: peso fora do padrão (95g a 105g); comprimento fora do padrão (10cm a 20cm)
+ID: 9 | Peso: 13.0g | Cor: roxo | Comprimento: 150.0cm | Motivos: peso fora do padrão (95g a 105g); cor fora do padrão (apenas azul ou verde); comprimento fora do padrão (10cm a 20cm)
+ID: 10 | Peso: 13.0g | Cor: amarelo | Comprimento: 12.0cm | Motivos: peso fora do padrão (95g a 105g); cor fora do padrão (apenas azul ou verde)
+ID: 11 | Peso: 13.0g | Cor: ciano | Comprimento: 200.0cm | Motivos: peso fora do padrão (95g a 105g); cor fora do padrão (apenas azul ou verde); comprimento fora do padrão (10cm a 20cm)
+
+==================================================
+🟦 GESTÃO DE PEÇAS - AUTOMACÃO INDUSTRIAL
+1. Cadastrar nova peça
+2. Listar peças aprovadas/reprovadas
+3. Remover peça cadastrada
+4. Listar caixas fechadas
+5. Gerar relatório final
+0. Sair
+==================================================
+Escolha: 4
+
+=== LISTAR CAIXAS FECHADAS ===
+Nenhuma caixa fechada.
+Caixa em formação: 5 peça(s).
+
+==================================================
+🟦 GESTÃO DE PEÇAS - AUTOMACÃO INDUSTRIAL
+1. Cadastrar nova peça
+2. Listar peças aprovadas/reprovadas
+3. Remover peça cadastrada
+4. Listar caixas fechadas
+5. Gerar relatório final
+0. Sair
+==================================================
+Escolha: 5
+
 === RELATÓRIO FINAL ===
-Total peças: 5 | Aprovadas: 3 | Reprovadas: 2
-Caixas fechadas: 0 | Em formação: 3
+Total peças: 11 | Aprovadas: 5 | Reprovadas: 6
+Caixas fechadas: 0 | Em formação: 5
 
 --- MOTIVOS DE REPROVAÇÃO ---
-peso fora do padrão (95g a 105g): 1
-cor fora do padrão (apenas azul ou verde): 1
+  peso fora do padrão (95g a 105g): 6
+  comprimento fora do padrão (10cm a 20cm): 4
+  cor fora do padrão (apenas azul ou verde): 3
 
---- LISTAR PEÇAS ---
-PEÇAS APROVADAS:
-ID: p001 | Peso: 100g | Cor: azul | Comprimento: 15cm
+--- CAIXAS FECHADAS ---
 
-Teste 4: Caixas Fechadas
-Cadastrar 11 peças aprovadas ->
-Caixa 1 - FECHADA (10 peças)
-Caixa em formação: 1 peça
+==================================================
+🟦 GESTÃO DE PEÇAS - AUTOMACÃO INDUSTRIAL
+1. Cadastrar nova peça
+2. Listar peças aprovadas/reprovadas
+3. Remover peça cadastrada
+4. Listar caixas fechadas
+5. Gerar relatório final
+0. Sair
+==================================================
+Escolha: 0
+👋 Encerrando sistema. Até logo!
+
 
 Normalização de Dados
 ---------------------
@@ -78,7 +234,7 @@ ID           | .strip().lower()  | " P001 " -> "p001"
 Cor          | difflib + lower() | " AZULL " -> "azul"
 Busca        | .lower()          | "P001" encontra "p001"
 
-Arquitetura (179 linhas)
+Arquitetura 
 ------------------------
 Constantes -> Utilitárias -> Core -> CRUD -> UI
 
