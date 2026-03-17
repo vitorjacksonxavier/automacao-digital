@@ -25,13 +25,12 @@ Sistema completo de **controle de qualidade e armazenamento** desenvolvido para 
 
 ```bash
 # 1. Clone o repositório
-git clone <seu-repositorio>
-cd gestao-pecas
-
+git clone https://github.com/vitorjacksonxavier/automacao-digital.git
+cd automacao-digital
 # 2. Execute diretamente
 python gestao_pecas.py
 Exemplo de Uso
-text
+
 === CADASTRAR NOVA PEÇA ===
 Informe o ID da peça:  P001 
 # ↓ Normalizado para: "p001"
